@@ -16,8 +16,9 @@ public class EmployeedbApplication {
 	public CommandLineRunner run(EmployeeRepository employeeRepository)
 	{
 		return (args -> {
-			insert(employeeRepository);
-		    System.out.println(employeeRepository.findAll());
+//			insert(employeeRepository);
+//		    System.out.println(employeeRepository.findAll());
+			System.out.println(employeeRepository.findEmployeeByLastNameContaining("bin"));
 		});
 	}
 
